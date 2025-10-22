@@ -13,7 +13,7 @@ def IrisModel(a,b,c,d):
 
 #st.write(f"{pred}==={y_test}")
 slidera = st.slider("Sepal Length",4.3,7.9,0.1)
-sliderb = st.slider("Srpal Width",2.0,4.4,0.1)
+sliderb = st.slider("Sepal Width",2.0,4.4,0.1)
 sliderc = st.slider("Petal Length",1.0,6.9,0.1)
 sliderd = st.slider("Petal Width",0.1,2.5,0.1)
 st.write(f"The Type of the flower is {flowertype[IrisModel(slidera,sliderb,sliderc,sliderd)[0]]}.")
