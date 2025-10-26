@@ -107,7 +107,7 @@ chart_type = charts.radio(
     on_change= Change_Chart_Type# Display options horizontally
 )
 
-page1 = st.Page("pages/page1.py", title="Page One", icon=":material/home:")
+page1 = st.Page("page1.py", title="Page One", icon=":material/home:")
     #page2 = st.Page("page_2_content.py", title="Page Two", icon=":material/looks_two:")
 
     # Create the navigation
