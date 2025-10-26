@@ -65,7 +65,7 @@ def DrawGraph(df,tabname,func,non_interact=None,*args,**kwargs):
     for i in df:
         for j in df:
             colors = np.random.choice(["#0000FF","#008400","#FFE747","#FF7E47","#9A00E2"])
-            charts.write(colors)
+            #charts.write(colors)
             if(i!=j and i!=non_interact and j!=non_interact):
                 tabname.header(f"{i} vs {j}")
                 tabname.caption(f"Relationship between {i} and {j}")
@@ -106,13 +106,3 @@ chart_type = charts.radio(
     horizontal=False ,
     on_change= Change_Chart_Type# Display options horizontally
 )
-"""
-page1 = st.Page("page1.py", title="Page One", icon=":material/home:")
-  
-page2 = st.Page("page2.py", title="Page Two", icon=":material/looks_two:")
-
-    # Create the navigation
-pg = st.navigation([page1,page2])
-
-    # Run the navigation
-pg.run()"""
