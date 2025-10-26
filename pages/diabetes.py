@@ -38,7 +38,7 @@ def SelectModels(*modelss,tabname):
         #st.write(i)
         if model1==i:
                 modelreal = eval(f"{i}()")
-                st.header(f"Model Selected : {i}")
+                tabname.header(f"Model Selected : {i}")
                 break
     #st.header(type(modelreal))
     modelreal.fit(X_train,y_train)
@@ -104,7 +104,7 @@ def ModelsRun(modelstr):
 
 
 data = pd.DataFrame([ModelsRun(i) for i in return_models],columns=["Model","ModelName","MSE","MAE","R2_Score","Predictions"])
-col1,col2 = st.columns(2)
+col1,col2 = modelsselection.columns(2)
 
     
 #st.dataframe(data2)
