@@ -109,7 +109,7 @@ chart_type = charts.radio(
 
 page1 = st.Page("page1.py", title="Page One", icon=":material/home:")
   
-page2 = st.Page("page.py", title="Page Two", icon=":material/looks_two:")
+page2 = st.Page("page2.py", title="Page Two", icon=":material/looks_two:")
 
     # Create the navigation
 pg = st.navigation([page1,page2])
