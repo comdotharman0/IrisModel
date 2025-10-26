@@ -107,9 +107,9 @@ chart_type = charts.radio(
     on_change= Change_Chart_Type# Display options horizontally
 )
 """
-page1 = st.Page("iris.py", title="Iris Dataset Model", icon="🌷")
+page1 = st.Page("pages/iris.py", title="Iris Dataset Model", icon="🌷")
   
-page2 = st.Page("diabetes.py", title="Diabetes Dataset Model", icon="🏥")
+page2 = st.Page("pages/diabetes.py", title="Diabetes Dataset Model", icon="🏥")
 
     # Create the navigation
 pg = st.navigation([page1,page2])
