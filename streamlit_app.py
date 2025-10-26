@@ -1,4 +1,4 @@
-import streamlit as st
+"""import streamlit as st
 import numpy as np 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -22,13 +22,13 @@ def IrisModel(a,b,c,d):
 #Tabs created
 tables, charts, usemodel = st.tabs(["📋 Tables","📊 Charts","💻 Use Model"])
 tabs_font_css = """
-<style>
+"""<style>
 button[data-baseweb="tab"] {
   font-size: 56px;
 }
 </style>
 """
-
+"""
 st.markdown(tabs_font_css, unsafe_allow_html=True)
 
 #Use Model Tab Items
@@ -106,10 +106,10 @@ chart_type = charts.radio(
     horizontal=False ,
     on_change= Change_Chart_Type# Display options horizontally
 )
-
-page1 = st.Page("page1.py", title="Page One", icon=":material/home:")
+"""
+page1 = st.Page("iris.py", title="Iris Dataset Model", icon="🌷")
   
-page2 = st.Page("page2.py", title="Page Two", icon=":material/looks_two:")
+page2 = st.Page("diabetes.py", title="Diabetes Dataset Model", icon="🏥")
 
     # Create the navigation
 pg = st.navigation([page1,page2])
