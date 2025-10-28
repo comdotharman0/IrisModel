@@ -1,4 +1,6 @@
 import streamlit as st
+import sys
+st.write(sys.path)
 page1 = st.Page("pages/iris.py", title="Iris Dataset Model", icon="🌷")
   
 page2 = st.Page("pages/app.py", title="Diabetes Dataset Model", icon="🏥")
