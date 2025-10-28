@@ -84,6 +84,7 @@ return_models=funcs.ReturnModels()
 
 
 data = pd.DataFrame([funcs.RunModels(i) for i in funcs.modelss],columns=["Model","ModelName","MSE","MAE","R2_Score","Predictions"])
+data["Model"] = data["Model"].astype(str)
 col1,col2 = modelsselection.columns(2)
 
     
