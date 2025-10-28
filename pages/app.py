@@ -3,7 +3,7 @@ import warnings
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
-from . import SelectModels,DrawCharts,SelectCharts,ModelsRun,FunctionsForDiabetesModel
+from diabetes.functions import SelectModels,DrawCharts,SelectCharts,ModelsRun,FunctionsForDiabetesModel
 from sklearn.datasets import load_diabetes
 import sklearn.linear_model as sl
 from sklearn.model_selection import train_test_split
