@@ -1,6 +1,6 @@
 import streamlit as st
 import sys
-#st.write(sys.path)
+st.write(sys.path)
 sys.path.insert(1,"pages")
 page1 = st.Page("pages/iris.py", title="Iris Dataset Model", icon="🌷")
   
