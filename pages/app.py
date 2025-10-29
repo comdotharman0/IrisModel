@@ -40,7 +40,7 @@ with tables:
     st.dataframe(df.info())
     st.header("Missing Values")
     st.dataframe(df.isnull().sum())
-chartsselection = {"Line Chart":charts.line_chart,"Bar Chart":charts.bar_chart,"Area Chart": charts.area_chart,"Scatter Chart":charts.scatter_chart,
+chartsselection = {"Line Chart":st.line_chart,"Bar Chart":st.bar_chart,"Area Chart": st.area_chart,"Scatter Chart":st.scatter_chart,
                    #"Vega Lite Chart":st.vega_lite_chart,
                    #"Altair Chart":st.altair_chart
                   }
