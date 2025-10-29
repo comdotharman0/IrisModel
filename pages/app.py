@@ -54,7 +54,7 @@ funcs = FunctionsForDiabetesModel(dir(sl),[],"sl",modelsselection,X_train,X_test
         "SelectModels":modelsselection,
         "SelectCharts":charts
     })
-st.write(funcs.modelss)  
+#st.write(funcs.modelss)  
    #st.dataframe(df)
 chartss= charts.selectbox('Select a Chart',
                           chartsselection.keys(),
