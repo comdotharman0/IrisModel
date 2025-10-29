@@ -11,7 +11,7 @@ from sklearn.metrics import mean_squared_error,r2_score,mean_absolute_error
 warnings.filterwarnings("ignore")
 diab = load_diabetes()
 X_train,X_test,y_train,y_test = train_test_split(diab.data,diab.target,test_size=0.2,random_state=42)
-st.header("MACHINE LEARNING MODELS FOR DIABETES DATASET FROM SKLEARN",divider:"blue")
+st.header("MACHINE LEARNING MODELS FOR DIABETES DATASET FROM SKLEARN",divider="blue")
 
 
 #return_models = funcs.ReturnModels()
