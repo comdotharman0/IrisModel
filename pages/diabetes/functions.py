@@ -142,8 +142,8 @@ class FunctionsForDiabetesModel:
           if i==chartss:
             st.header(i)
             #with self.tabs["SelectCharts"]:
-          self.DrawCharts(df,chartsselection["chartsselection"][i],chartx,charty)
-          break 
+            self.DrawCharts(df,chartsselection["chartsselection"][i],chartx,charty)
+            break 
       #except BaseException as e:
             #st.write(str(e))
     
